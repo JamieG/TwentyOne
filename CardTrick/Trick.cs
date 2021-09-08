@@ -22,7 +22,7 @@ namespace CardTrick
                 
                 while (choice == null || !accepted.Contains(choice.Value))
                 {
-                    Console.Write("Which column contains your card? [Escape to quit]:  ");
+                    Console.Write("Which column contains your card? [x to quit]:  ");
                     choice = Char.ToUpperInvariant(Console.ReadKey().KeyChar);
                     Console.WriteLine();
                 }
