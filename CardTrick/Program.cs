@@ -1,4 +1,7 @@
-﻿namespace CardTrick
+﻿using System;
+using System.Diagnostics;
+
+namespace CardTrick
 {
     class Program
     {
@@ -6,6 +9,9 @@
         {
             var trick = new Trick();
             trick.Run();
+
+            if (Debugger.IsAttached)
+                Console.ReadKey();
         }
     }
 }
